@@ -377,7 +377,7 @@ header.sticky .nav-bar{
 .skills-info{
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(autofill, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     gap: 20px;
     margin: 0 auto;
 }
@@ -426,5 +426,105 @@ header.sticky .nav-bar{
 }
 
 .bar{
-    
+    background-color: var(--card-bg-color);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 6px;
+    transition: .3s ease;
 }
+
+.bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: var(--small-font-size);
+}
+
+.bar .info span{
+    font-weight: 500;
+}
+
+.bar .line{
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background-color: #c5cadf;
+    border-radius: 2px;
+}
+
+.bar .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--second-color);
+    border-radius: 2px;
+}
+
+.bar .python::before{
+    width:95% ;
+}
+
+.bar .sql::before{
+    width:90%;
+}
+
+.bar .data-ana::before{
+    width: 85%;
+}
+
+.bar .panda::before{
+    width: 75%;
+}
+
+.bar .powerbi::before{
+    width: 82%;
+}
+
+.experience-card{
+    background-color: var(--card-bg-color);
+    border-bottom:3px solid var(--second-color) ;
+    padding: 35px;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+    transition: .3s ease;
+}
+
+.experience-card .upper{
+    line-height: 30px;
+}
+
+.experience-card h3{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.experience-card h5{
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.experience-card span{
+    color: var(--third-color);
+}
+
+.experience-card .hr{
+    width: 100%;
+    height: 2px;
+    background-color: var(--line-color);
+    margin: 10px 0 22px;
+}
+
+.experience-card p{
+    text-align: justify;
+}
+
+.edu-list .item:hover, .bar:hover, .experience-card:hover{
+    transform: scale(1.03);
+}
+
+/* ========= Service Sections ========== */
