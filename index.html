@@ -1,609 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoaib Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+  </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- ================ Header ===================== -->
-     <header>
-        <div class="nav-bar">
-            <a href="#" class="logo">Shoaib</a>
-            <div class="navigation">
-                <div class="nav-items">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#services">Services</a>
-                    <a href="#project">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
+  <body>
+    <div class="cubes-container">
+      <div class="cube cube-1"></div>
+      <div class="cube cube-2"></div>
+      <div class="cube cube-3"></div>
+      <div class="cube cube-4"></div>
+      <div class="cube cube-5"></div>
+    </div>
+    <div class="container">
+      <header>
+        <div class="top-menu">
+          <ul>
+            <li class="active" data-menu="about">
+              <a href="#about">
+                <i class="fas fa-user"></i>
+                <span class="link">about</span>
+              </a>
+            </li>
+            <li data-menu="resume">
+              <a href="#resume">
+                <i class="fas fa-file"></i>
+                <span class="link">resume</span>
+              </a>
+            </li>
+            <li data-menu="work">
+              <a href="#work">
+                <i class="fas fa-paint-brush"></i>
+                <span class="link">work</span>
+              </a>
+            </li>
+            <li data-menu="blog">
+              <a href="#blog">
+                <i class="fas fa-comment-dots"></i>
+                <span class="link">blog</span>
+              </a>
+            </li>
+            <li data-menu="contact">
+              <a href="#contact">
+                <i class="fas fa-at"></i>
+                <span class="link">contact</span>
+              </a>
+            </li>
+          </ul>
         </div>
-     </header>
-
-
-     <!-- ================ Home Section ===================== -->
-      <section class="home flex-center" id="home">
-        <div class="home-container">
-            <div class="media-icons">
-                <a href="https://www.facebook.com/shoaib.hoque.33" target="_blank"><i class="ri-facebook-circle-line"></i></a>
-                <a href="https://www.linkedin.com/in/shoaib-hoque-2bb20314b/"><i class="ri-linkedin-box-line"></i></a>
-                <a href="https://github.com/ShoaibHoque"><i class="ri-github-line"></i></a>
+      </header>
+      <div class="hero" id="hero">
+        <div class="hero-img">
+          <img src="img/profile.jpg" alt="" />
+        </div>
+        <div class="hero-info">
+          <h2 class="title">Shoaib Hoque</h2>
+          <div class="hero-details">
+            <h3 class="subtitle" id="subtitle"></h3>
+            <p class="blink">|</p>
+          </div>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/shoaib.hoque.33" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/shoaib-hoque-2bb20314b/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/ShoaibHoque" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://stackoverflow.com/" target="_blank"
+            ><i class="fab fa-stack-overflow"></i
+          ></a>
+        </div>
+        <div class="links">
+          <a href="/img/Shoaib-Hoque-Resume-CDS.pdf">download cv</a>
+          <a href="#contact" data-menu="contact" id="contact-me">contact me</a>
+        </div>
+      </div>
+      <section class="about active" id="about">
+        <div class="about-me p-3">
+          <h3 class="specialtitle">about <span>me</span></h3>
+          <div class="row">
+            <div class="text">
+              <p>
+                I have expertise in Python, data analysis, and machine learning,
+                with a Post Graduate Diploma in Data Science and multiple
+                certifications. I excel in transforming complex data into
+                insights using advanced Python libraries.
+              </p>
             </div>
-
             <div class="info">
-                <h2>Hi, I am Shoaib Haque</h2>
-                <h3>CERTIFIED DATA SCIENTIST</h3>
-                <p>
-                    Expert in Python, data analysis, and machine learning, with a Post Graduate Diploma in Data Science and certifications from IABAC, Google, and IBM. Skilled in transforming complex data into actionable insights and creating data-driven stories.
-                </p>
-                <a href="#contact" class="btn">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
+              <ul>
+                <li><strong>age . . . . .</strong> 30</li>
+                <li><strong>residence . . . . .</strong> Bangladesh</li>
+                <li><strong>Hiring . . . . .</strong> available</li>
+                <li><strong>address . . . . .</strong>Tongi, Gazipur</li>
+              </ul>
             </div>
-
-            <div class="home-img">
-                <img src="/img/head.jpg" alt="" width="250px">
-            </div>
+          </div>
         </div>
-
-        <a href="#about" class="scroll-down">Scroll Down <i class="ri-arrow-down-s-line"></i></a>
+        <div class="services p-3">
+          <h3 class="specialtitle">my <span>services</span></h3>
+          <div class="services-container">
+            <div class="serv">
+              <div class="icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4>Predictive Modeling</h4>
+              <p>
+                Creating models to forecast future trends or behaviors based on
+                historical data.
+              </p>
+            </div>
+            <div class="serv">
+              <div class="icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h4>Data Visualization</h4>
+              <p>
+                Developing clear and impactful visual representations of data to
+                communicate insights.
+              </p>
+            </div>
+            <div class="serv">
+              <div class="icon">
+                <i class="fa-solid fa-file-excel"></i>
+              </div>
+              <h4>Data Cleaning and Preprocessing</h4>
+              <p>
+                Ensuring data quality by handling missing values, outliers, and
+                inconsistencies
+              </p>
+            </div>
+            <div class="serv">
+              <div class="icon">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <h4>Machine Learning Implementation</h4>
+              <p>
+                Building and deploying machine learning models to solve complex
+                problems.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
-
-
-      <!-- ================ About Section ===================== -->
-       <section class="about section" id="about">
-        <div class="container flex-center">
-            <h1 class="section-title-01">About Me</h1>
-            <h2 class="section-title-02">About Me</h2>
-            <div class="content flex-center">
-                <div class="about-img">
-                    <img src="/img/head.jpg" alt="" width="250px">
-                </div>
-                
-                <div class="about-info">
-                    <div class="description">
-                        <h3>I'm Shoaib</h3>
-                        <h4>A Certified <span>Data Scientist</span> based in <span>Bangladesh</span></h4>
-                        <p>
-                            With a solid foundation in Python programming, data analysis, data processing,
-                            and model building, I possess a Post Graduate Diploma in Data Science and a
-                            B.Sc. in Computer Science Engineering. My expertise lies in a profound
-                            comprehension of machine learning algorithms, creating data-driven stories,
-                            and data handling. I am skilled in harnessing Python libraries and machine
-                            learning resources to convert intricate data into practical insights. Through the
-                            achievement of the IABAC certified Data Scientist Certification, Google
-                            Advanced Data Analytics Professional Certificate and IBM Data Science
-                            Professional Certificate, my dedication to ongoing learning and involvement in
-                            cutting-edge data science and machine learning endeavors is unwavering.
-
-                        </p>
-                    </div>
-
-                    <ul class="professional-list">
-                        <li class="list-item">
-                            <h3>1+</h3>
-                            <span>Years of <br>Experience</span>
-                        </li>
-
-                        <li class="list-item">
-                            <h3>12+</h3>
-                            <span>Successfull <br>Projects</span>
-                        </li>
-
-                        <li class="list-item">
-                            <h3>5+</h3>
-                            <span>In Progress <br>Projects</span>
-                        </li>
-                    </ul>
-
-                    <a href="/img/Shoaib-Hoque-Resume-CDS.pdf" target="_blank" class="btn">Download CV <i class="ri-file-download-line"></i></a>
-                </div>
+      <section class="resume" id="resume">
+        <div class="my-resume p-3">
+          <h3 class="specialtitle">R<span>esume</span></h3>
+          <div class="row">
+            <div class="experience">
+              <div class="title">
+                <i class="fas fa-briefcase"></i>
+                <h4>experience</h4>
+              </div>
+              <div class="exp-box">
+                <span>January 2024 - June 2024</span>
+                <h4>Data Science Intern</h4>
+                <h5>Somikoron Ai</h5>
+                <p>
+                  Develop a "News Alert API Handler" by extracting crucial
+                  information using web scraping tools like Beautiful Soup and
+                  Selenium. Integrate the acquired data with NLP techniques and
+                  other methodologies to create an effective news alert system.
+                </p>
+              </div>
+              <div class="exp-box">
+                <span>October 2023 - May 2024</span>
+                <h4>Data Science Consultant</h4>
+                <h5>Rubixe</h5>
+                <p>
+                  Achieved 95% accuracy in a client project using machine
+                  learning algorithms and 85% accuracy in revenue attribution
+                  with predictive models, contributing significantly to project
+                  success and timely delivery.
+                </p>
+              </div>
+              <div class="exp-box">
+                <span>May 2023 - August 2023</span>
+                <h4>Data Analytics Trainee</h4>
+                <h5>Nogor Solutions Limited</h5>
+                <p>
+                  Conducted statistical analysis using Python scripts, handling
+                  data collection, cleaning, and preparation. Validated business
+                  assumptions and uncovered insights through hypothesis testing,
+                  leading to data-driven improvements.
+                </p>
+              </div>
             </div>
+            <div class="education">
+              <div class="title">
+                <i class="fas fa-university"></i>
+                <h4>education</h4>
+              </div>
+              <div class="edu-box">
+                <span>February 2023 - October 2023</span>
+                <h4>PGD in Data Science</h4>
+                <h5>UNITED INTERNATIONAL UNIVERSITY</h5>
+                <p>
+                  Completed a Post Graduate Diploma in Data Science at United
+                  International University from February 2023 to October 2023.
+                </p>
+              </div>
+              <div class="edu-box">
+                <span>May 2018 - December 2022 </span>
+                <h4>BSc in CSE</h4>
+                <h5>SHANTO MARIAM UNIVERSITY OF CREATIVE TECHNOLOGY</h5>
+                <p>
+                  Earned a B.Sc. in Computer Science Engineering with a CGPA of
+                  3.73/4.00 from Shanto Mariam University of Creative
+                  Technology, May 2018 - December 2022.
+                </p>
+              </div>
+              <div class="edu-box">
+                <span>January 2014 - December 2017</span>
+                <h4>BA. in Islamic Economics</h4>
+                <h5>ISLAMIC UNIVERSITY KUSHTIA</h5>
+                <p>
+                  Completed a BA in Islamic Economics with a CGPA of 3.50/5.00
+                  at Islamic University Kushtia from January 2014 to December
+                  2017.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-       </section>
-
-
-       <!-- ================ Skills Section ===================== -->
-        <section class="skills section" id="skills">
-            <div class="container flex-center">
-                <h1 class="section-title-01">Skills</h1>
-                <h2 class="section-title-02">Skills</h2>
-                <div class="content">
-                    <div class="skills-description">
-                        <h3>Education & Skills</h3>
-                        <p>
-                            For more than one & half years, I have been deeply involved in the data science field, continuously learning and applying my knowledge. During this time, I've gained extensive experience in various data science techniques and tools. My work has included projects that span data analysis, machine learning, and data visualization.
-                        </p>
-                    </div>
-
-                    <div class="skills-info education-all">
-                        <div class="education">
-                            <h4><label>Education</label></h4>
-
-                            <ul class="edu-list">
-                                <li class="item">
-                                    <span class="year">Feb 2023 - Oct 2023</span>
-                                    <p>
-                                        <span>
-                                            Post Graduate Diploma in
-                                            Data Science
-                                        </span> - UNITED INTERNATIONAL UNIVERSITY
-                                    </p>
-                                </li>
-
-                                <li class="item">
-                                    <span class="year">May 2018 - Dec 2022</span>
-                                    <p>
-                                        <span>
-                                            B.Sc. in Computer Science
-                                            Engineering (CSE)
-                                        </span> - SHANTO MARIAM UNIVERSITY OF CREATIVE TECHNOLOGY
-                                    </p>
-                                </li>
-
-                                <li class="item">
-                                    <span class="year">Jan 2014 - Dec 2017</span>
-                                    <p>
-                                        <span>
-                                            BA. in Islamic Economics
-                                        </span> - ISLAMIC UNIVERSITY KUSHTIA
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="education">
-                            <h4><label>Skills</label></h4>
-
-                            <ul class="bars">
-                                <li class="bar">
-                                    <div class="info">
-                                        <span>Python</span>
-                                        <span>95%</span>
-                                    </div>
-                                    <div class="line python"></div>
-                                </li>
-
-                                <li class="bar">
-                                    <div class="info">
-                                        <span>Exploratory Data Analysis</span>
-                                        <span>90%</span>
-                                    </div>
-                                    <div class="line data-ana"></div>
-                                </li>
-
-                                <li class="bar">
-                                    <div class="info">
-                                        <span>Machine Learning</span>
-                                        <span>85%</span>
-                                    </div>
-                                    <div class="line m-learning"></div>
-                                </li>
-
-                                <li class="bar">
-                                    <div class="info">
-                                        <span>TensorFlow</span>
-                                        <span>65%</span>
-                                    </div>
-                                    <div class="line tensor-flow"></div>
-                                </li>
-
-                                <li class="bar">
-                                    <div class="info">
-                                        <span>MS SQL Server, MySQL</span>
-                                        <span>82%</span>
-                                    </div>
-                                    <div class="line SQL"></div>
-                                </li>  
-
-                                <li class="bar">
-                                    <div class="info">
-                                        <span>Web Scraping</span>
-                                        <span>90%</span>
-                                    </div>
-                                    <div class="line w-scraping"></div>
-                                </li>
-
-                                <li class="bar">
-                                    <div class="info">
-                                        <span>Power BI, Tableau</span>
-                                        <span>85%</span>
-                                    </div>
-                                    <div class="line p-table"></div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="education">
-                            <h4><label>Certifications</label></h4>
-                            <ul class="edu-list">
-                                <li class="item">
-                                    <span class="year">5<sup>th</sup> June,2024</span>
-                                    <p>
-                                        IABAC Certified Data Scientist
-                                    </p>
-                                </li>
-
-                                <li class="item">
-                                    <span class="year">7<sup>th</sup> February, 2024</span>
-                                    <p>
-                                        Datamites Certified Data Scientist
-                                        <a href="" target="_blank" class="btns">Show More</a>
-                                    </p>
-                                </li>
-
-                                <li class="item">
-                                    <span class="year">1<sup>st</sup> June, 2023</span>
-                                    <p>
-                                        Google Advanced Data Analytics
-                                    </p>
-                                </li>
-
-                                <li class="item">
-                                    <span class="year">31<sup>st</sup> March, 2023</span>
-                                    <p>
-                                        IBM Data Science
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="skills-description">
-                        <h3>Work & Experience</h3>
-                    </div>
-
-                    <div class="skills-info">
-                        <div class="experience-card">
-                            <div class="upper">
-                                <h3>Data Science Intern</h3>
-                                <h5>Fulltime | Remote</h5>
-                                <span>Jan 2024 - June 2024</span>
-                            </div>
-                            <div class="hr"></div>
-                            <h4><label>Somikoron AI</label></h4>
-                            <p>
-                                Utilize web scraping tools like Beautiful Soup and Selenium to extract crucial news data, then develop a News Alert API Handler integrating NLP and other methodologies for processing and alerting.
-                            </p>
-                        </div>
-
-                        <div class="experience-card">
-                            <div class="upper">
-                                <h3>
-                                    Data Science Consultant
-                                </h3>
-                                <h5>Fulltime | Remote</h5>
-                                <span>Oct 2023 - May 2024</span>
-                            </div>
-                            <div class="hr"></div>
-                            <h4><label>Rubixe</label></h4>
-                            <p>
-                                Collaborated on client projects using machine learning algorithms, achieving 95% test accuracy. Developed predictive models with 85% accuracy for attributing revenue and conversions.
-                            </p>
-                        </div>
-
-                        <div class="experience-card">
-                            <div class="upper">
-                                <h3>Data Analytics Trainee</h3>
-                                <h5>Fulltime | Office</h5>
-                                <span>
-                                    May 2023 - Aug 2023
-                                </span>
-                            </div>
-                            <div class="hr"></div>
-                            <h4><label>Nogor Solutions Limited</label></h4>
-                            <p>
-                                Conducted statistical analysis using Python scripts, ensuring data integrity through collection and cleaning. Validated business assumptions with hypothesis testing, leading to process improvements.
-                            </p>
-                        </div>
-                    </div>
+        <div class="skills p-3">
+          <h3 class="specialtitle">My<span>skills</span></h3>
+          <div class="row">
+            <div class="skill-left">
+              <div class="skill">
+                <div class="title">
+                  <i class="fas fa-paint-brush"></i>
+                  <h4>Machine Learning</h4>
                 </div>
-            </div>
-        </section>
-
-
-        <!-- ================ Service Section ===================== -->
-         <section class="services section" id="services">
-            <div class="container flex-center">
-                <h1 class="section-title-01">Services</h1>
-                <h1 class="section-title-02">Services</h1>
-                <div class="content">
-                    <div class="services-description">
-                        <h3>What I provide</h3>
-                    </div>
-
-                    <ul class="service-list">
-                        <li class="service-container">
-                            <div class="service-card">
-                                <i class="ri-pie-chart-line"></i>
-                                <h3>
-                                    Data Science Consultant
-                                </h3>
-
-                                <div class="learn-more-btn">
-                                    Learn More <i class="ri-arrow-right-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="service-model flex-center">
-                                <div class="service-model-body">
-                                    <i class="ri-close-line model-close-btn"></i>
-                                    <h3>
-                                        Data Science Consultant
-                                    </h3>
-                                    <h4>What is Data Science Consultant do ?</h4>
-                                    <p>
-                                        Collaborated with team members to understand client requirements and business challenges, and worked on a client project applying machine learning algorithms (decision tree, XGBoost, random forest) achieving 95% test accuracy. Played a key role in ensuring timely project submission.
-                                    </p>
-                                    <h4>What I provide</h4>
-                                    <ul>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Develop and implement predictive models to analyze large datasets and uncover trends.</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Collaborate with clients to identify business challenges and propose data-driven solutions.</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Conduct exploratory data analysis and feature engineering to optimize model performance.</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Present insights and recommendations to stakeholders using visualizations and reports.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="service-container">
-                            <div class="service-card">
-                                <i class="ri-pages-line"></i>
-                                <h3>
-                                    Web Scraping
-                                </h3>
-
-                                <div class="learn-more-btn">
-                                    Learn More <i class="ri-arrow-right-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="service-model flex-center">
-                                <div class="service-model-body">
-                                    <i class="ri-close-line model-close-btn"></i>
-                                    <h3>
-                                        Web Scraping
-                                    </h3>
-                                    <h4>What is Web Scraping ?</h4>
-                                    <p>
-                                        To collect and organize information from a website, use Beautiful Soup or Selenium for data extraction. Structure the collected data into a pandas DataFrame, and then save it as a CSV or Excel file for future use. This process ensures the data is well-organized and easily accessible for further analysis.
-                                    </p>
-                                    <h4>What I provide</h4>
-                                    <ul>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Collected required information from website</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Organize collected information as structured data with pandas data frame.</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Store those collected information as csv or excel format for future use.</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Collect data using “Beautiful Soup” or “Selenium”.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="service-container">
-                            <div class="service-card">
-                                <i class="ri-line-chart-fill"></i>
-                                <h3>
-                                    Data preprocessing
-                                </h3>
-
-                                <div class="learn-more-btn">
-                                    Learn More <i class="ri-arrow-right-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="service-model flex-center">
-                                <div class="service-model-body">
-                                    <i class="ri-close-line model-close-btn"></i>
-                                    <h3>
-                                        Data preprocessing
-                                    </h3>
-                                    <h4>What is Data preprocessing ?</h4>
-                                    <p>
-                                        Data preprocessing involves several essential steps to prepare raw data for analysis. These steps include cleaning the data by removing errors and inconsistencies, reducing noise to improve data quality, and fixing missing values to ensure completeness. Additionally, scaling and encoding the data standardizes formats and removes duplicates, while handling outliers mitigates the impact of excessive values.
-                                    </p>
-                                    <h4>What I provide ?</h4>
-                                    <ul>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Cleaning the data</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Reduce noise</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Fix missing values</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Scaling the data</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Encoding the data</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Remove Duplicates</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Fixing the excessive values (outlier)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="service-container">
-                            <div class="service-card">
-                                <i class="ri-bar-chart-box-fill"></i>
-                                <h3>
-                                    Building Models to predict 
-                                </h3>
-
-                                <div class="learn-more-btn">
-                                    Learn More <i class="ri-arrow-right-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="service-model flex-center">
-                                <div class="service-model-body">
-                                    <i class="ri-close-line model-close-btn"></i>
-                                    <h3>
-                                        Building Models to predict 
-                                    </h3>
-                                    <h4>What is Building Models to predict ?</h4>
-                                    <p>
-                                        Building multiple models involves selecting different algorithms tailored to the data type and comparing their performance to identify the most accurate one. The data is split into training and testing sets, with hyperparameter tuning applied as needed.
-                                    </p>
-                                    <h4>What I provide</h4>
-                                    <ul>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Build multiple models for data </li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Choosing different models for different kinds of data</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Make a comparison between models to find best accuracy among them</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Split data for training and testing</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Make a Hyper parameter tuning when it is necessary</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Find accuracy score, confusion matrix, F1 score, error calculation up to satisfactory level</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Check on overfitting and underfitting during predicting models</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="service-container">
-                            <div class="service-card">
-                                <i class="ri-bar-chart-horizontal-fill"></i>
-                                <h3>
-                                    Data Analysis
-                                </h3>
-
-                                <div class="learn-more-btn">
-                                    Learn More <i class="ri-arrow-right-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="service-model flex-center">
-                                <div class="service-model-body">
-                                    <i class="ri-close-line model-close-btn"></i>
-                                    <h3>
-                                        Data Analysis
-                                    </h3>
-                                    <h4>What is Data Analysis ?</h4>
-                                    <p>
-                                        To collect and organize information from a website, use Beautiful Soup or Selenium for data extraction. Structure the collected data into a pandas DataFrame, and then save it as a CSV or Excel file for future use. This process ensures the data is well-organized and easily accessible for further analysis.
-                                    </p>
-                                    <h4>What I provide</h4>
-                                    <ul>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Make Univariate Analysis with each feature</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Make Bivariate Analysis with relevant features together and find the relation between features</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Make Multivariate Analysis to get relation of all features with each and others</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Make Statistical analysis with Hypothesis testing, A/B testing, distribution testing</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="service-container">
-                            <div class="service-card">
-                                <i class="ri-pie-chart-box-fill"></i>
-                                <h3>
-                                    Data Visualization
-                                </h3>
-
-                                <div class="learn-more-btn">
-                                    Learn More <i class="ri-arrow-right-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="service-model flex-center">
-                                <div class="service-model-body">
-                                    <i class="ri-close-line model-close-btn"></i>
-                                    <h3>
-                                        Data Visualization
-                                    </h3>
-                                    <h4>What is Data Visualization ?</h4>
-                                    <p>
-                                        Data visualization is crucial for gaining insights, with tools like Matplotlib and Seaborn providing powerful static visualizations. For interactive and dynamic dashboards, Power BI and Tableau are employed, enabling users to explore data trends and patterns more effectively.
-                                    </p>
-                                    <h4>What I provide</h4>
-                                    <ul>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Make data visualization for getting insights using matplotlib and seaborn</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Make interactive visualization dashboards using Power BI and Tableau</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="service-container">
-                            <div class="service-card">
-                                <i class="ri-database-2-fill"></i>
-                                <h3>
-                                    Database Management
-                                </h3>
-
-                                <div class="learn-more-btn">
-                                    Learn More <i class="ri-arrow-right-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="service-model flex-center">
-                                <div class="service-model-body">
-                                    <i class="ri-close-line model-close-btn"></i>
-                                    <h3>
-                                        Database Management
-                                    </h3>
-                                    <h4>What is Database Management ?</h4>
-                                    <p>
-                                        Database management involves using MS SQL Server and MySQL to create and maintain databases. This includes writing queries to retrieve specific information and establishing relationships between tables using primary and foreign keys. Properly structuring these relationships ensures data integrity and efficient querying across the database.
-                                    </p>
-                                    <h4>What I provide</h4>
-                                    <ul>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Make and maintain Database with MS SQL Server and My SQL</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> Make queries to find required information from database</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> make relationship between tables with primary and foreign key whenever needed</li>
-                                        <li><i class="ri-checkbox-circle-fill"></i> make a proper relation between all tables on database</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>  
+                <div class="skill-box">
+                  <h4>Data Visualization</h4>
+                  <div class="progress">
+                    <span data-progress="80%"></span>
+                  </div>
                 </div>
-            </div>
-         </section>
-
-
-         
-         <!-- ================ Project Section ===================== -->
-         <section class="project section" id="project">
-            <div class="container flex-center">
-                <h1 class="section-title-01">Projects</h1>
-                <h2 class="section-title-02">Projects</h2>
-                <div class="content">
-                    <div class="project-list">
-                        <div class="img-card-container">
-                            <div class="img-card">
-                                <div class="overlay"></div>
-                                <div class="info">
-                                    <h3>Improve ITSM processes with Machine Learning</h3>
-                                    <span>
-                                        Client: ABC Tech (Rubixe project)
-                                    </span>
-                                </div>
-                                <img src="/img/p1.jpg" alt="project-1">
-                            </div>
-
-                            <div class="project-model flex-center">
-                                <div class="project-model-body">
-                                    <i class="fas fa-times project-close-btn"></i>
-                                    <h3>Machine Learning</h3>
-                                    <img src="/img/p1.jpg" alt="" width="750px">
-                                    <p>
-                                        To predict high-priority tickets, multiple models were evaluated, with Random Forest Classifier achieving the highest accuracy at 89%. While other models like Decision Tree, KNN, and SVM also performed well, further refinement is needed to balance accuracy, precision, and recall for practical application.
-                                    </p>
-                                    <a href="" target="_blank" class="btn">Source Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="skill-box">
+                  <h4>Web Scrapping</h4>
+                  <div class="progress">
+                    <span data-progress="95%"></span>
+                  </div>
                 </div>
+                <div class="skill-box">
+                  <h4>Statistical Analysis</h4>
+                  <div class="progress">
+                    <span data-progress="70%"></span>
+                  </div>
+                </div>
+                <div class="skill-box">
+                  <h4>Database Management</h4>
+                  <div class="progress">
+                    <span data-progress="60%"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="coding">
+                <div class="title">
+                  <i class="fas fa-code"></i>
+                  <h4>coding</h4>
+                </div>
+                <div class="coding-container">
+                  <div class="code">
+                    <div class="progress">
+                      <span class="progress-bar"></span>
+                      <span class="num" data-num="90"></span>
+                    </div>
+                    <h5>Python</h5>
+                  </div>
+                  <div class="code">
+                    <div class="progress">
+                      <span class="progress-bar"></span>
+                      <span class="num" data-num="85"></span>
+                    </div>
+                    <h5>SQL</h5>
+                  </div>
+                </div>
+              </div>
             </div>
-         </section>
+            <div class="skill-right">
+              <div class="languages">
+                <div class="title">
+                  <i class="fas fa-flag"></i>
+                  <h4>languages</h4>
+                </div>
+                <div class="language">
+                  <h4>Bangla</h4>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="language">
+                  <h4>english</h4>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="knowledges">
+                <div class="title">
+                  <i class="fas fa-list"></i>
+                  <h4>Soft Skills & Knowledges</h4>
+                </div>
+                <div class="knowledge-container">
+                  <div class="knowledge-box">
+                    <i class="fas fa-check"></i>
+                    <h4>Project Management</h4>
+                  </div>
+                  <div class="knowledge-box">
+                    <i class="fas fa-check"></i>
+                    <h4>Git and github</h4>
+                  </div>
+                  <div class="knowledge-box">
+                    <i class="fas fa-check"></i>
+                    <h4>Adaptability</h4>
+                  </div>
+                  <div class="knowledge-box">
+                    <i class="fas fa-check"></i>
+                    <h4>Teamwork</h4>
+                  </div>
+                  <div class="knowledge-box">
+                    <i class="fas fa-check"></i>
+                    <h4>Critical, Strategic, Analytical Thinking</h4>
+                  </div>
+                  <div class="knowledge-box">
+                    <i class="fas fa-check"></i>
+                    <h4>Effective Communication and Presentation Skills</h4>
+                  </div>
+                  <div class="knowledge-box">
+                    <i class="fas fa-check"></i>
+                    <h4>Decision Making</h4>
+                  </div>
+                  <div class="knowledge-box">
+                    <i class="fas fa-check"></i>
+                    <h4>Storytelling</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work" id="work">
+        <div class="my-work p-3">
+          <h3 class="specialtitle">Recent<span>work</span></h3>
+          <div class="work-container">
+            <div class="box">
+              <div class="box-img">
+                <img src="img/work-1.jpg" alt="" />
+              </div>
+              <div class="box-content">
+                <h4>Improve ITSM processes with Machine Learning</h4>
+                <p><span>Client: ABC Tech </span> / (Rubixe project)</p>
+                <a
+                  href="https://github.com/ShoaibHoque/Predict_Ticket_ABC_Client"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> View Project</a
+                >
+              </div>
+            </div>
 
+            <div class="box">
+              <div class="box-img">
+                <img src="img/work-2.jpg" alt="" />
+              </div>
+              <div class="box-content">
+                <h4>Employee Performance Analysis</h4>
+                <p><span>Client: INX Future Inc. </span> / (IABAC Project)</p>
+                <a
+                  href="https://github.com/ShoaibHoque/Employee-Performance-Analysis-IABAC-Project"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> View Project</a
+                >
+              </div>
+            </div>
 
-
-
-       <!-- ================ JavaScript ===================== -->
-        <script src="/code.js"></script>
-</body>
+            <div class="box">
+              <div class="box-img">
+                <img src="img/work-3.jpg" alt="" />
+              </div>
+              <div class="box-content">
+                <h4>Falcon 9 First Stage Landing Prediction</h4>
+                <p><span>Client: Space X </span> / (IBM Project)</p>
+                <a
+                  href="https://github.com/ShoaibHoque/Data-Science-Capstone-Project/tree/master"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog" id="blog">
+        <!-- <div class="my-blog p-3">
+          <h3 class="specialtitle">b<span>log</span></h3>
+          <div class="blog-container">
+            <div class="box">
+              <div class="box-img">
+                <img src="img/blog1.jpg" alt="" />
+              </div>
+              <div class="box-desc">
+                <span>april 28, 2020</span>
+                <a href="#">By spite about do of allow</a>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Tenetur, voluptatem!
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-img">
+                <img src="img/blog2.jpg" alt="" />
+              </div>
+              <div class="box-desc">
+                <span>april 28, 2020</span>
+                <a href="#">By spite about do of allow</a>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Tenetur, voluptatem!
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-img">
+                <img src="img/blog3.jpg" alt="" />
+              </div>
+              <div class="box-desc">
+                <span>april 28, 2020</span>
+                <a href="#">By spite about do of allow</a>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Tenetur, voluptatem!
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-img">
+                <img src="img/blog1.jpg" alt="" />
+              </div>
+              <div class="box-desc">
+                <span>april 28, 2020</span>
+                <a href="#">By spite about do of allow</a>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Tenetur, voluptatem!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <h2 style="text-align: center; margin-top: 150px">
+          This Section is under maintanance.
+        </h2>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact-me p-3">
+          <h3 class="specialtitle">get<span>in touch</span></h3>
+          <div class="contact-container">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14589.63392349455!2d90.39253592591888!3d23.910585373307562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c4f0aaa5b633%3A0x25d6fa745c22c1f!2sDattapara%2C%20Tongi!5e0!3m2!1sen!2sbd!4v1725065724067!5m2!1sen!2sbd"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="info-list">
+              <ul>
+                <li><strong>address . . . . .</strong> Tongi, Gazipur</li>
+                <li><strong>email . . . . .</strong>shoaibhoque@gmail.com</li>
+                <li><strong>phone . . . . .</strong>+8801681-855181</li>
+                <li><strong>For Hire . . . . .</strong>available</li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-title">
+            <h3 class="specialtitle">contact<span>form</span></h3>
+          </div>
+          <div class="contact-form">
+            <form action="#">
+              <div class="form-group">
+                <input type="text" placeholder="Full Name" />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Email" />
+              </div>
+              <div class="form-group message">
+                <textarea placeholder="Your Message"></textarea>
+              </div>
+            </form>
+            <button>send message <span></span></button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/9e5ba2e3f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/code.js"></script>
+  </body>
 </html>
