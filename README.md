@@ -8,4 +8,4 @@
 
 [Click Here to See](https://shoaibhoque.netlify.app/)
 
-![Overview]("/img/overview.png")
+![Overview](/img/overview.png)
